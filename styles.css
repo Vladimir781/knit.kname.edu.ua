@@ -1,0 +1,204 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #0067a2; /* Ярко-синий цвет */
+}
+
+
+
+.intro h3 {
+    font-size: 1.75rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.why-us h4 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.why-us i {
+    color: #0067a2;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.why-us i:hover {
+    transform: scale(1.2);
+    color: #ff6600; /* Цвет при наведении */
+}
+
+.why-us .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space between columns */
+}
+
+.why-us .col-12 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.why-us h5 {
+    font-size: 1.25rem;
+    color: #0067a2;
+    margin-top: 15px;
+    margin-bottom: 10px; /* Standard margin below the heading */
+    min-height: 3rem; /* Ensure consistent height */
+    display: flex;
+    align-items: center; /* Vertically align text */
+    justify-content: center;
+}
+
+.why-us p {
+    color: #777;
+    margin-top: 0; /* Remove top margin */
+    padding: 0 10px; /* Add padding to avoid overflow */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 15px 0; /* Add margin to separate cards */
+}
+
+.card-img {
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    width: 100%; /* Make the image fully responsive */
+}
+
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Трохи затемнює зображення */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover .card-img {
+    opacity: 0.7;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 767.98px) {
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .why-us h4 {
+        font-size: 1.75rem;
+    }
+
+    .why-us h5 {
+        font-size: 1.2rem; /* Увеличен размер шрифта на мобильных устройствах */
+        min-height: 2.5rem;
+    }
+
+    .why-us i {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem; /* Увеличен размер шрифта */
+        padding: 0 5px; /* Ensure the text fits within the card */
+    }
+
+    .card-img-overlay {
+        padding: 5px; /* Reduce padding on smaller screens */
+    }
+
+    .card {
+        margin: 10px 0; /* Увеличен отступ между карточками на мобильных устройствах */
+    }
+}
+
+.qualification-section img {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Добавляем плавный переход */
+}
+
+.qualification-section img:hover {
+    transform: scale(1.05); /* Увеличиваем изображение на 5% при наведении */
+    opacity: 0.8; /* Делаем изображение слегка прозрачным */
+}
+
+
+.contacts-section {
+    background-color: #f8f9fa; /* Світлий фон */
+    padding: 50px 0;
+}
+
+.contacts-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contacts-section h4 {
+    font-size: 1.25rem;
+    color: #0067a2;
+    margin-top: 20px;
+}
+
+.contacts-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contacts-section a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.contacts-section a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для карти */
+}
+
+@media (max-width: 767.98px) {
+    .contacts-section {
+        padding: 30px 15px;
+    }
+
+    .contacts-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .contacts-section h4 {
+        font-size: 1.1rem;
+    }
+
+    .contacts-section p {
+        font-size: 0.9rem;
+    }
+
+    .map-container {
+        height: 300px; /* Зменшена висота карти на мобільних пристроях */
+    }
+	.qualification-section h4 {
+
+        margin-top: 10px; /* Додає зовнішній відступ зверху */
+    }
+}
